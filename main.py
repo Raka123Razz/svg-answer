@@ -10,7 +10,7 @@ import threading
 import concurrent
 
 BOT_OWNER_ROLE = 'fetch' # change to what you need
-#BOT_OWNER_ROLE_ID = "597332392637890571"
+#BOT_OWNER_ROLE_ID = "771599322915143710"
   
  
 
@@ -176,7 +176,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="Option I", value="0", inline=False)
         self.embed.add_field(name="Option II", value="0", inline=False)
         self.embed.add_field(name="Option III", value="0", inline=False)
-        self.embed.set_footer(text=f"CAPTAIN COOL#0044",\
+        self.embed.set_footer(text=f"Rakha#9499",) 
             icon_url="https://cdn.discordapp.com/attachments/595713706411819033/604679180201754674/image0.png")
         self.embed.add_field(name="Suggested Answer!:", value="0", inline=True)
 
@@ -255,7 +255,7 @@ class Bot(discord.Client):
         await self.clear_results()
         await self.update_embeds()
         await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
-        await self.change_presence(activity=discord.Game(name='Trivia with Captain Cool||*help'))
+        await self.change_presence(activity=discord.Game(name='Trivia with Rakha||*help'))
 
     async def on_message(self, message):
 
@@ -282,7 +282,7 @@ class Bot(discord.Client):
           if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
            embed = discord.Embed(title="Help Commands", description="**How Run Bot**", color=0x00ff00)
            embed.add_field(name="Support Game", value="**Loco\nConfetti-India\nFlipkart\nJeetoh\nHQ Trivia\nCashquiz\nSwag IQ\nThe Q\nConfetti Vietnam\nConfetti mexico**", inline=False)
-           embed.add_field(name="when Question come put command", value=" `*` **is command work for all support game except**\n**`*j` is command of jeetoh**\n**`*f` is command for filpkart**\n\n**use cmd! in particular channels**\n\n**FOR MORE INFO CONTACT TO CAPTAIN COOL#0044**", inline=False)
+           embed.add_field(name="when Question come put command", value=" `*` **is command work for all support game except**\n**`*j` is command of jeetoh**\n**`*f` is command for filpkart**\n\n**use cmd! in particular channels**\n\n**FOR MORE INFO CONTACT TO Rakha#9499**", inline=False)
            await message.channel.send(embed=embed)
           
 
